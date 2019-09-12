@@ -21,7 +21,6 @@
 \ProvidesClass{unimapcgs}[2019/01/26 version 1.1]
 
 %% Version 1.1 [2019/01/26] add tabulary, booktabs, multirow package
-%% Version 1.2 [2019/09/12] cleanup on the formatting
 
 \RequirePackage{silence}
 \WarningFilter{float}{Can't redefine}
@@ -139,7 +138,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %TODO Sections headings format
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\RequirePackage[nobottomtitles*]{titlesec}
+\RequirePackage[nobottomtitles]{titlesec}
 % chapters
 %% Chapter heading sizes must be FIXED at 12pt.
 \titleformat{\chapter}[hang]{\filcenter\bfseries}{\fontsize{12pt}{12pt}\selectfont\MakeUppercase{\chaptername{} \thechapter: }}{0pc}{\makebox[1cm][l]\bfseries\fontsize{12pt}{12pt}\selectfont\MakeUppercase}
@@ -180,8 +179,7 @@
 \tocfile{\listplatename}{lop}
 \endgroup}
 
-%\renewcommand\cftdotsep{1}\\
-\renewcommand\cftdotsep{\cftnodots}	%make dot disappear
+\renewcommand\cftdotsep{1}
 \cftsetrmarg{2.6pc plus1fil}
 \cftsetpnumwidth{2pc}
 
@@ -205,17 +203,13 @@
 %\cftsetindents{subsubsec}{0pt}{4.05pc}
 
 \renewcommand\cftpartfont{}
-%\renewcommand\cftpartpagefont{\normalfont\normalsize}
-%\renewcommand\cftpartdotsep{1}
-\renewcommand\cftpartpagefont{\normalfont\bfseries}
-\renewcommand\cftpartdotsep{\cftnodots}
+\renewcommand\cftpartpagefont{\normalfont\normalsize}
+\renewcommand\cftpartdotsep{1}
 \renewcommand\cftpartleader{\normalfont\cftdotfill{\cftpartdotsep}}
 
 \renewcommand\cftchapfont{}
-%\renewcommand\cftchappagefont{\normalfont\normalsize}
-%\renewcommand\cftchapdotsep{1}
-\renewcommand\cftchappagefont{\normalfont\bfseries}
-\renewcommand\cftchapdotsep{\cftnodots}
+\renewcommand\cftchappagefont{\normalfont\normalsize}
+\renewcommand\cftchapdotsep{1}
 \renewcommand\cftchapleader{\normalfont\cftdotfill{\cftchapdotsep}}
 \renewcommand\cftchappresnum{\MakeUppercase{\chaptername} }
 \renewcommand\cftchapaftersnum{\;: \; }
@@ -369,16 +363,16 @@
 \def\@matric{\@latex@warning@no@line{No \noexpand\matric given}}
 
 %% Student IC/Passport Number
-%\def\icpass#1{\gdef\@icpass{#1}}
-%\def\@icpass{\@latex@warning@no@line{No \noexpand\icpass given}}
+\def\icpass#1{\gdef\@icpass{#1}}
+\def\@icpass{\@latex@warning@no@line{No \noexpand\icpass given}}
 
 %% Date of Birth
-%\def\dob#1{\gdef\@dob{#1}}
-%\def\@dob{\@latex@warning@no@line{No \noexpand\dob given}}
+\def\dob#1{\gdef\@dob{#1}}
+\def\@dob{\@latex@warning@no@line{No \noexpand\dob given}}
 
 %% Supervisor
-%\def\supervisor#1{\gdef\@supervisor{#1}}
-%\def\@supervisor{\@latex@warning@no@line{No \noexpand\supervisor given}}
+\def\supervisor#1{\gdef\@supervisor{#1}}
+\def\@supervisor{\@latex@warning@no@line{No \noexpand\supervisor given}}
 
 %% Title of the thesis in Malay
 \def\titlems#1{\gdef\@titlems{#1}}
@@ -419,24 +413,24 @@
 \def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
                        \if@mainmatter
                          \refstepcounter{chapter}%
-                         \typeout{\@chapapp\space\.}%
+                         \typeout{\@chapapp\space\thechapter.}%
                          \addcontentsline{toc}{chapter}%
-                                   {\protect\numberline{\thechapter}\texorpdfstring{\uppercase{#1}}{#1}}% %main matter toc
+                                   {\protect\numberline{\thechapter}\texorpdfstring{\MakeUppercase{#1}}{#1}}% %main matter toc
                        \else
 %                         \addcontentsline{toc}{chapter}{#1}%
-                         \addcontentsline{toc}{chapter}{\texorpdfstring{\bfseries\uppercase{#1}}{#1}}% %front matter toc
+                         \addcontentsline{toc}{chapter}{\texorpdfstring{\bfseries\MakeUppercase{#1}}{#1}}% %front matter toc
                        \fi
                     \else
-                      \addcontentsline{toc}{chapter}{\texorpdfstring{\uppercase{#1}}{#1}}%
+                      \addcontentsline{toc}{chapter}{\texorpdfstring{\MakeUppercase{#1}}{#1}}%
                     \fi
-                    \chaptermark{\texorpdfstring{\uppercase{#1}}{#1}}%
+                    \chaptermark{\texorpdfstring{\MakeUppercase{#1}}{#1}}%
                     \addtocontents{lof}{\protect\addvspace{10\p@}}%
                     \addtocontents{lot}{\protect\addvspace{10\p@}}%
                     \addtocontents{lop}{\protect\addvspace{10\p@}}%
                     \if@twocolumn
-                      \@topnewpage[\@makechapterhead{\texorpdfstring{\uppercase{#2}}{#1}}]%
+                      \@topnewpage[\@makechapterhead{\texorpdfstring{\MakeUppercase{#2}}{#1}}]%
                     \else
-                      \@makechapterhead{\texorpdfstring{\uppercase{#2}}{#1}}%
+                      \@makechapterhead{\texorpdfstring{\MakeUppercase{#2}}{#1}}%
                       \@afterheading
                     \fi}
 
@@ -491,13 +485,67 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %TODO Declaration 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\RequirePackage{pdfpages}
-%\chapter{Declaration of Report}
 \newcommand\declaration{%
-	\setcounter{page}{1} 
+	\thispagestyle{empty}{\bfseries\linespread{1.1}
+	\begin{center}
+		{\fontsize{12pt}{14pt}\selectfont\MakeUppercase{UNIVERSITI MALAYSIA PERLIS}\par}
+	\end{center}	
+	
+%	\chapter{Declaration of Thesis}
 	\phantomsection\addcontentsline{toc}{part}{\texorpdfstring{\bfseries\uppercase{Declaration of Thesis}}{Declaration of Thesis}}
-	\includepdf{DeclarationofThesis2019.pdf}
-}
+	\vspace*{-10mm}	
+	\renewcommand{\arraystretch}{1.2}	% to make better spacing between rows	
+	\begin{table}[H]\fontsize{11pt}{13pt}\selectfont
+	\begin{tabularx}{\textwidth}{|X X X X|}
+		\hline  
+		\multicolumn{4}{|c|}{\fontsize{12pt}{14pt}\selectfont\textbf{DECLARATION OF THESIS}}	 \\	
+		\multicolumn{4}{|X|}{}  \\	
+		\multicolumn{4}{|X|}{
+		\begin{tabularx}{.95\textwidth}{lcX}
+			Author's Full Name & : & \MakeUppercase{\@author} \\
+			Title & : & \MakeUppercase{\@title} \\
+			Date of Birth & : & \MakeUppercase{\@dob} \\
+			Academic Session & : & \@acads
+		\end{tabularx}} \\
+		\multicolumn{4}{|X|}{}  \\
+		\multicolumn{4}{|X|}{I hereby declare that this thesis becomes the property of Universiti Malaysia Perlis (UniMAP) and to be placed at the library of UniMAP. This thesis  is classified as:}   \\
+		\multicolumn{4}{|X|}{} \\
+		\multicolumn{4}{|X|}{
+		\begin{tabularx}{.95\textwidth}{lclX}
+			\cline{2-2} 
+			\multicolumn{1}{l}{} & \multicolumn{1}{|c|}{\makebox[0.4cm]{}} & \textbf{CONFIDENTIAL} & (Contains confidential information under the Official \\ \cline{2-2} 
+			\multicolumn{1}{l}{} & \multicolumn{1}{c}{    } &  \multicolumn{1}{l}{} &  Secret Act 1997)* \\ \cline{2-2}
+			\multicolumn{1}{l}{} & \multicolumn{1}{|c|}{    } & \textbf{RESTRICTED} & (Contains restricted information as specified by the  \\ \cline{2-2} 
+			\multicolumn{1}{l}{} & \multicolumn{1}{c}{    } &  \multicolumn{1}{l}{} &  organization where research was done)* \\ \cline{2-2} 
+			\multicolumn{1}{l}{} & \multicolumn{1}{|c|}{    } & \textbf{OPEN ACCESS} & I agree that my thesis to be published as online    \\ \cline{2-2} 
+			\multicolumn{1}{l}{} & \multicolumn{1}{c}{    } &  \multicolumn{1}{l}{} &  open access (Full Text) \\ 
+		\end{tabularx}}  \\
+		\multicolumn{4}{|X|}{} \\
+		\multicolumn{4}{|X|}{I, the author, give permission to reproduce this thesis in whole or in part for the purpose of research or academic exchange only (except during the period of \_\_\_\_ years, if so requested above)}	\\
+		\multicolumn{4}{|X|}{} \\				
+		\multicolumn{4}{|X|}{
+			\begin{tabularx}{.95\textwidth}{lXlX}
+				& & & Certified by: \\
+				\multicolumn{4}{X}{} \\ 
+				\multicolumn{4}{X}{} \\
+				\multicolumn{4}{X}{} \\ \cline{2-2} \cline{4-4}
+				\multicolumn{1}{c}{     } & \textbf{SIGNATURE} & \makebox[0.7cm][l]{ } & \textbf{SIGNATURE OF SUPERVISOR} \\
+				\multicolumn{4}{X}{} \\ 
+				\multicolumn{1}{c}{} & \@icpass & \multicolumn{1}{l}{} & \MakeUppercase{\@supervisor} \\ \cline{2-2} \cline{4-4}
+				\multicolumn{1}{c}{     } & \textbf{NEW IC/PASSPORT NO.} & \makebox[0.7cm][l]{ } & \textbf{NAME OF SUPERVISOR} \\
+				\multicolumn{1}{c}{     } & Date: \@declaredate & \makebox[0.7cm][l]{ } & Date: \\
+				\multicolumn{4}{X}{} \\
+				\multicolumn{4}{X}{} \\
+				\multicolumn{4}{X}{} 
+			\end{tabularx}} \\
+		 \hline 
+	\end{tabularx}
+	\end{table}
+	\vspace*{-5mm}
+	\fontsize{10pt}{12pt}\noindent\normalfont\selectfont{\textbf{NOTES}: * If the thesis is CONFIDENTIAL or RESTRICTED, please attach with the letter from the organization with the period and reasons for confidentiality or restriction.}
+	
+	} 
+\clearpage}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %TODO Abstract Enviroment 
@@ -506,18 +554,16 @@
 %% English environment
 \newenvironment{EnAbstract}
   { \titleformat{\chapter}[display]{\filcenter\bfseries}{\fontsize{12pt}{14pt}\selectfont\MakeUppercase{\chaptername{} \thechapter}}{-1.7pc}{\singlespacing\bfseries\fontsize{12pt}{14pt}}
-  	\titlespacing*{\chapter}{0pt}{*-3}{*7}	%space btwn the ABSTRACT and Title
     \chapter[Abstract]{\@title}%
-    \begin{center}{\fontsize{12pt}{14pt}\bfseries\selectfont ABSTRACT}\end{center}\par\vspace*{7mm}} %1mm
+    \begin{center}{\fontsize{12pt}{14pt}\bfseries\selectfont ABSTRACT}\end{center}\par\vspace*{1mm}}
   {\ignorespacesafterend}
 %
 %% Malay abstract environment
 \newenvironment{MsAbstract}
 	{\begin{otherlanguage}{bahasam}%		
 		\titleformat{\chapter}[display]{\filcenter\bfseries}{\fontsize{12pt}{14pt}\selectfont{\chaptername{} \thechapter}}{-1.7pc}{\singlespacing\bfseries\fontsize{12pt}{14pt}}
-		\titlespacing*{\chapter}{0pt}{*-3}{*7}
 		\chapter[Abstrak]{\@titlems}%
-		\begin{center}{\fontsize{12pt}{14pt}\bfseries\selectfont ABSTRAK}\end{center}\par\vspace*{7mm}}	%1mm
+		\begin{center}{\fontsize{12pt}{14pt}\bfseries\selectfont ABSTRAK}\end{center}\par\vspace*{1mm}}	
 	{\end{otherlanguage}\ignorespacesafterend}
 
 
@@ -565,8 +611,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \pretocmd{\mainmatter}{%
-%  \addtocontents{toc}{\protect\setlength{\protect\cftbeforechapskip}{2.5pc}}	%add space before each section in toc
-%  \addtocontents{toc}{\protect\cftpagenumbersoff{chap}}
+  \addtocontents{toc}{\protect\setlength{\protect\cftbeforechapskip}{2.5pc}}
+  \addtocontents{toc}{\protect\cftpagenumbersoff{chap}}
   \addtocontents{toc}{\protect\renewcommand\protect\cftchapfont{\protect\bfseries}}
 }{}{}
 
@@ -607,11 +653,11 @@
   \thispagestyle{empty}
   \titleformat{\chapter}[display]{\filcenter\bfseries}{\fontsize{12pt}{12pt}\selectfont\MakeUppercase{\chaptername{} \thechapter }}{-2pc}{\bfseries\fontsize{12pt}{12pt}\selectfont\MakeUppercase}
   \titlespacing*{\chapter}{0pt}{*-4.5}{*-2}
-%  \vspace*{\stretch{1}}
-%    \begin{center}
-%      {\Large\bfseries APPENDICES}
-%    \end{center}
-%  \vspace*{\stretch{2}}
+  \vspace*{\stretch{1}}
+    \begin{center}
+      {\Large\bfseries APPENDICES}
+    \end{center}
+  \vspace*{\stretch{2}}
 %  \addtocontents{toc}{\protect\renewcommand{\protect\chaptername}{\appendixname}}
 %  \settowidth{\tmplength}{\bfseries\MakeUppercase{\appendixname}\space N\cftchapaftersnum}
 %  \addtocontents{toc}{\protect\setlength{\cftchapnumwidth}{\the\tmplength}}

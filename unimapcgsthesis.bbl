@@ -1,0 +1,154 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+CGS UniMAP}{%
+CGS UniMAP}{%
+{\protect \APACyear {2017}}%
+}]{%
+cgs:thesis:guideline:2017}
+\APACinsertmetastar {%
+cgs:thesis:guideline:2017}%
+\begin{APACrefauthors}%
+{Centre for Graduate Studies, Universiti Malaysia Perlis}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2017}.
+\newblock
+\APACrefbtitle {UniMAP Thesis Guidelines 2017} {Unimap thesis guidelines 2017}.
+\newblock
+\APACaddressPublisher{Perlis, Malaysia}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lim%
+}{%
+Lim%
+}{%
+{\protect \APACyear {2007}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+lim:latextypesetting}
+\APACinsertmetastar {%
+lim:latextypesetting}%
+\begin{APACrefauthors}%
+Lim, L\BPBI T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007{\protect \BCnt {1}}}{}{}.
+\newblock
+\APACrefbtitle {{\LaTeX}: Beautiful Typesetting.} {{\LaTeX}: Beautiful
+  typesetting.}
+\newblock
+\begin{APACrefURL} \url{http://liantze.penguinattack.org/latextypesetting.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lim%
+}{%
+Lim%
+}{%
+{\protect \APACyear {2007}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+lim:2007}
+\APACinsertmetastar {%
+lim:2007}%
+\begin{APACrefauthors}%
+Lim, L\BPBI T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007{\protect \BCnt {2}}}{}{}.
+\newblock
+\APACrefbtitle {Writing Your Thesis with {\LaTeX}.} {Writing your thesis with
+  {\LaTeX}.}
+\newblock
+\APAChowpublished {Internal circulation, School of Computer Sciences,
+  Universiti Sains Malaysia.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mittelbach%
+, Goossens%
+, Braams%
+, Carlisle%
+\BCBL {}\ \BBA {} Rowley%
+}{%
+Mittelbach%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2004}}%
+}]{%
+latex:companion}
+\APACinsertmetastar {%
+latex:companion}%
+\begin{APACrefauthors}%
+Mittelbach, F.%
+, Goossens, M.%
+, Braams, J.%
+, Carlisle, D.%
+\BCBL {}\ \BBA {} Rowley, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2004}.
+\newblock
+\APACrefbtitle {The {\LaTeX} Companion} {The {\LaTeX} companion}\
+  (\PrintOrdinal{2nd}\ \BEd).
+\newblock
+\APACaddressPublisher{Boston, MA, USA}{Addison-Wesley}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Oetiker%
+, Partl%
+, Hyna%
+\BCBL {}\ \BBA {} Schlegl%
+}{%
+Oetiker%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+lshort}
+\APACinsertmetastar {%
+lshort}%
+\begin{APACrefauthors}%
+Oetiker, T.%
+, Partl, H.%
+, Hyna, I.%
+\BCBL {}\ \BBA {} Schlegl, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Not So Short Introduction to {\LaTeXe}} {The not so
+  short introduction to {\LaTeXe}}{\BBCQ}\ (\PrintOrdinal{4.2}\ \BEd)\
+  [\bibcomputersoftwaremanual].
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Roberts%
+}{%
+Roberts%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+roberts}
+\APACinsertmetastar {%
+roberts}%
+\begin{APACrefauthors}%
+Roberts, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+\APACrefbtitle {Getting to Grips with {\LaTeX}.} {Getting to grips with
+  {\LaTeX}.}
+\newblock
+\begin{APACrefURL} \url{http://www.andy-roberts.net/misc/latex/index.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

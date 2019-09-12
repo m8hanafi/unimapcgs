@@ -1,0 +1,37 @@
+\BOOKMARK [-1][-]{front.-1}{Front Matter}{}% 1
+\BOOKMARK [-1][-]{section*.1}{Declaration of Thesis}{}% 2
+\BOOKMARK [0][-]{chapter*.2}{Acknowledgement}{section*.1}% 3
+\BOOKMARK [0][-]{chapter*.3}{Table of Contents}{section*.1}% 4
+\BOOKMARK [0][-]{chapter*.4}{List of Tables}{section*.1}% 5
+\BOOKMARK [0][-]{chapter*.5}{List of Figures}{section*.1}% 6
+\BOOKMARK [0][-]{chapter*.6}{List of Abbreviations}{section*.1}% 7
+\BOOKMARK [0][-]{chapter*.7}{List of Symbols}{section*.1}% 8
+\BOOKMARK [0][-]{chapter*.8}{Abstrak}{section*.1}% 9
+\BOOKMARK [0][-]{chapter*.9}{Abstract}{section*.1}% 10
+\BOOKMARK [-1][-]{main.-1}{Main Chapters}{}% 11
+\BOOKMARK [0][-]{chapter.10}{1 Samples of Basic LaTeX}{main.-1}% 12
+\BOOKMARK [1][-]{section.11}{1.1 Background History}{chapter.10}% 13
+\BOOKMARK [1][-]{section.14}{1.2 Some Simple Command Usages.}{chapter.10}% 14
+\BOOKMARK [1][-]{section.50}{1.3 Special Characters}{chapter.10}% 15
+\BOOKMARK [1][-]{section.52}{1.4 Useful Resources}{chapter.10}% 16
+\BOOKMARK [0][-]{chapter.53}{2 Citations and Bibliography}{main.-1}% 17
+\BOOKMARK [1][-]{section.54}{2.1 The *.bib File}{chapter.53}% 18
+\BOOKMARK [1][-]{section.66}{2.2 Citations using the apacite package}{chapter.53}% 19
+\BOOKMARK [2][-]{subsection.67}{2.2.1 Author-Year System}{section.66}% 20
+\BOOKMARK [3][-]{subsubsection.68}{2.2.1.1 Testing the TOC}{subsection.67}% 21
+\BOOKMARK [0][-]{chapter.69}{3 Figures, Tables, Equations, Algorithms, etc}{main.-1}% 22
+\BOOKMARK [1][-]{section.70}{3.1 Inserting Figures}{chapter.69}% 23
+\BOOKMARK [1][-]{section.79}{3.2 How Do I Do Subfigures?}{chapter.69}% 24
+\BOOKMARK [1][-]{section.98}{3.3 Inserting Tables}{chapter.69}% 25
+\BOOKMARK [1][-]{section.144}{3.4 Full-paged, Sideways Figures and Tables}{chapter.69}% 26
+\BOOKMARK [1][-]{section.152}{3.5 Mathematical Equations}{chapter.69}% 27
+\BOOKMARK [1][-]{section.178}{3.6 Acronyms}{chapter.69}% 28
+\BOOKMARK [1][-]{section.188}{3.7 Program Listings}{chapter.69}% 29
+\BOOKMARK [0][-]{chapter.238}{4 Implementation}{main.-1}% 30
+\BOOKMARK [1][-]{section.239}{4.1 Printing Your Thesis}{chapter.238}% 31
+\BOOKMARK [0][-]{chapter.240}{5 Discussion}{main.-1}% 32
+\BOOKMARK [0][-]{chapter.241}{6 Conclusion}{main.-1}% 33
+\BOOKMARK [0][-]{chapter*.242}{REFERENCES}{main.-1}% 34
+\BOOKMARK [0][-]{appendix.243}{A Data Used}{main.-1}% 35
+\BOOKMARK [0][-]{appendix.244}{B UML Diagrams}{main.-1}% 36
+\BOOKMARK [0][-]{appendix.245}{C Dummy Appendix}{main.-1}% 37

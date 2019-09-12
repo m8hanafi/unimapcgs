@@ -1,0 +1,46 @@
+\babel@toc {english}{}
+\raggedright \sloppy 
+\hfill {\bfseries PAGE}\\
+\contentsline {part}{\bfseries \uppercase {Declaration of Thesis}}{i}{section*.1}% 
+\contentsline {chapter}{\bfseries \uppercase {Acknowledgement}}{ii}{chapter*.2}% 
+\contentsline {chapter}{\uppercase {\bfseries Table of Contents}}{iii}{chapter*.3}% 
+\contentsline {chapter}{\uppercase {\bfseries List of Tables}}{v}{chapter*.4}% 
+\contentsline {chapter}{\uppercase {\bfseries List of Figures}}{vi}{chapter*.5}% 
+\contentsline {chapter}{\bfseries \uppercase {List of Abbreviations}}{vii}{chapter*.6}% 
+\contentsline {chapter}{\bfseries \uppercase {List of Symbols}}{viii}{chapter*.7}% 
+\babel@toc {bahasam}{}
+\contentsline {chapter}{\bfseries \uppercase {Abstrak}}{ix}{chapter*.8}% 
+\babel@toc {english}{}
+\contentsline {chapter}{\bfseries \uppercase {Abstract}}{x}{chapter*.9}% 
+\renewcommand \cftchapfont {\bfseries }
+\contentsline {chapter}{\numberline {1}\uppercase {Samples of Basic \LaTeX {}}}{1}{chapter.10}% 
+\contentsline {section}{\numberline {1.1}Background History}{1}{section.11}% 
+\contentsline {section}{\numberline {1.2}Some Simple Command Usages.}{2}{section.14}% 
+\contentsline {section}{\numberline {1.3}Special Characters}{4}{section.50}% 
+\contentsline {section}{\numberline {1.4}Useful Resources}{5}{section.52}% 
+\contentsline {chapter}{\numberline {2}\uppercase {Citations and Bibliography}}{6}{chapter.53}% 
+\contentsline {section}{\numberline {2.1}The \texttt {*.bib} File}{6}{section.54}% 
+\contentsline {section}{\numberline {2.2}Citations using the \texttt {apacite} package}{7}{section.66}% 
+\contentsline {subsection}{\numberline {2.2.1}Author-Year System}{8}{subsection.67}% 
+\contentsline {subsubsection}{\numberline {2.2.1.1}Testing the TOC}{8}{subsubsection.68}% 
+\contentsline {chapter}{\numberline {3}\uppercase {Figures, Tables, Equations, Algorithms, etc}}{9}{chapter.69}% 
+\contentsline {section}{\numberline {3.1}Inserting Figures}{9}{section.70}% 
+\contentsline {section}{\numberline {3.2}How Do I Do Subfigures?}{11}{section.79}% 
+\contentsline {section}{\numberline {3.3}Inserting Tables}{11}{section.98}% 
+\contentsline {section}{\numberline {3.4}Full-paged, Sideways Figures and Tables}{16}{section.144}% 
+\contentsline {section}{\numberline {3.5}Mathematical Equations}{18}{section.152}% 
+\contentsline {section}{\numberline {3.6}Acronyms}{19}{section.178}% 
+\contentsline {section}{\numberline {3.7}Program Listings}{20}{section.188}% 
+\contentsline {chapter}{\numberline {4}\uppercase {Implementation}}{22}{chapter.238}% 
+\contentsline {section}{\numberline {4.1}Printing Your Thesis}{22}{section.239}% 
+\contentsline {chapter}{\numberline {5}\uppercase {Discussion}}{23}{chapter.240}% 
+\contentsline {chapter}{\numberline {6}\uppercase {Conclusion}}{24}{chapter.241}% 
+\cftpagenumberson {chap}
+\contentsline {chapter}{\uppercase {\bfseries REFERENCES}}{25}{chapter*.242}% 
+\contentsline {chapter}{\numberline {A}\uppercase {Data Used}}{26}{appendix.243}% 
+\setlength {\cftbeforechapskip }{1pc}
+\renewcommand {\chaptername }{Appendix}
+\renewcommand \cftchapfont {\bfseries }
+\setlength {\cftchapnumwidth }{90.31616pt}
+\contentsline {chapter}{\numberline {B}\uppercase {UML Diagrams}}{27}{appendix.244}% 
+\contentsline {chapter}{\numberline {C}\uppercase {Dummy Appendix}}{28}{appendix.245}% 
