@@ -11,7 +11,7 @@ You don't have to concern about the formatting. Just focus on the content of you
 Download the latest version of unimapcgs here! 
 
 ## Versions
-Current stable release: version 1.0
+All the files in this directory are current stable release
 
 ## Required Software
 A good LaTeX compiler. For Windows users, go for MikTeX. For Linux users, install TeX Live. For Mac user, install MacTeX. Note: If you install a minimal/basic version of a LaTeX compiler, you need to download extra necassary packages to run the unimapcgs class. Go for the full download even its size is huge!!. 
